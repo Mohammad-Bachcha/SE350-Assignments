@@ -1,4 +1,4 @@
-package com.se350.assignment1;
+package com.assignment1;
 
 import java.util.Date;
 import java.util.Objects;
