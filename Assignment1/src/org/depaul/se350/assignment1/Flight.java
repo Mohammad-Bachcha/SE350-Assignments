@@ -1,9 +1,9 @@
-package com.assignment1;
+package org.depaul.se350.assignment1;
 
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
-import com.se350.exceptions.IllegalParameterException;
+import org.depaul.se350.assignment1.exceptions.IllegalParameterException;
 
 public class Flight {
 	
