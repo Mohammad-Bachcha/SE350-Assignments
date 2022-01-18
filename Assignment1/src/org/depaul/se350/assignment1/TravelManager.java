@@ -20,7 +20,6 @@ public class TravelManager {
 		} catch (IllegalParameterException e) {
 			System.out.println(e); 
 		}
-
 		System.out.println(flight);
 	}
 

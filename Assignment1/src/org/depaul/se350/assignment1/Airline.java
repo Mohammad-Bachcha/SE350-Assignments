@@ -24,7 +24,7 @@ public class Airline {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(name);
+		return Objects.hash(getName());
 	}
 
 	@Override
@@ -36,7 +36,7 @@ public class Airline {
 		if (getClass() != obj.getClass())
 			return false;
 		Airline other = (Airline) obj;
-		return Objects.equals(name, other.name);
+		return Objects.equals(getName(), other.getName());
 	}
 	
 	@Override

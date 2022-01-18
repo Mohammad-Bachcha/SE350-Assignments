@@ -68,7 +68,7 @@ public class Flight {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(airline, departureTime, destination, flightNumber, origin);
+		return Objects.hash(getAirline(), getDepartureTime(), getDestination(), getFlightNumber(), getOrigin());
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -79,9 +79,9 @@ public class Flight {
 		if (getClass() != obj.getClass())
 			return false;
 		Flight other = (Flight) obj;
-		return Objects.equals(airline, other.airline) && Objects.equals(departureTime, other.departureTime)
-				&& Objects.equals(destination, other.destination) && Objects.equals(flightNumber, other.flightNumber)
-				&& Objects.equals(origin, other.origin);
+		return Objects.equals(getAirline(), other.getAirline()) && Objects.equals( getDepartureTime(), other. getDepartureTime())
+				&& Objects.equals(getDestination(), other.getDestination()) && Objects.equals(getFlightNumber(), other.getFlightNumber())
+				&& Objects.equals(getOrigin(), other.getOrigin());
 	}
 	
 	@Override
