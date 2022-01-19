@@ -15,7 +15,7 @@ public class Airport {
 			throw new IllegalParameterException("Name should be exactly 3 characters");
 		}
 		for(char letter : name.toCharArray()) {
-			if(!Character.isUpperCase(letter) || !Character.isLetter(letter)) {
+			if(!Character.isLetter(letter) || !Character.isUpperCase(letter)) {
 				throw new IllegalParameterException("This is a bad parameter");
 			}
 		}
@@ -28,7 +28,7 @@ public class Airport {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(name);
+		return Objects.hash(getName());
 	}
 
 	@Override
