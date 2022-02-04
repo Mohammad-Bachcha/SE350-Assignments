@@ -14,7 +14,6 @@ public class TravelManager {
 		} catch (Exception e) {
 			System.out.println(e); 
 		}
-		System.out.println("Hello");
 	}
 	
 }
