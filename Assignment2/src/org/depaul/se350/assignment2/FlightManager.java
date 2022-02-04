@@ -11,7 +11,7 @@ public final class FlightManager {
 	private static FlightManager flightInstance;
 	private static List<Flight> flights;
 
-    public static FlightManager getInstance() throws Exception {
+    public static FlightManager getInstance() {
         if (flightInstance == null) {
         	flightInstance = new FlightManager();
         	flights = new ArrayList<Flight>();

@@ -11,10 +11,9 @@ public class TravelManager {
 		try {
 			FlightManager manager = FlightManager.getInstance();
 			manager.createFlight("Commercial", new Airline("Spirit"), new Airport("ORD"), new Airport("LAX"), date);
-		} catch (Exception e) {
-			System.out.println(e); 
-		}
-		System.out.println("Hello");
+		} catch (IllegalParameterException e) {
+			System.out.println(e);
+		} 
 	}
 	
 }
