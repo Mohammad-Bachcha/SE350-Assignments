@@ -11,6 +11,9 @@ public class TravelManager {
 		Airport destination = null;
 		Airline airline = null;
 		Flight flight = null;
+		if(flight == null) {
+			System.out.println("2" + 2.0);
+		}
 		Date date = new Date("1/13/2022 12:30:00");
 		try {
 			origin = new Airport("ORD");
