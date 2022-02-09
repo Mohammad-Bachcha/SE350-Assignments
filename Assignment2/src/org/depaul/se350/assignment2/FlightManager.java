@@ -23,9 +23,10 @@ public final class FlightManager {
    
     }
     
-    public void createFlight(String type, Airline airline, Airport origin, Airport destination,Date date) throws IllegalParameterException {
+    public String createFlight(String type, Airline airline, Airport origin, Airport destination,Date date) throws IllegalParameterException {
        Flight flight = FlightFactory.createFlight(type, airline, origin, destination, date);
        flights.add(flight);
+       return flight.getFlightNumber();
     }
     
     public Flight getFlightByNumber(String flightNum) throws IllegalParameterException {
