@@ -1,4 +1,4 @@
-package org.depaul.se350.assignment3.Flights;
+package org.depaul.se350.assignment3.flights;
 
 public interface Flight {
     public String getFlightNumber();

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.depaul.se350.assignment3.Flights.Flight;
 import org.depaul.se350.assignment3.exceptions.IllegalParameterException;
 import org.depaul.se350.assignment3.factory.FlightFactory;
+import org.depaul.se350.assignment3.flights.Flight;
 
 public final class FlightManager {
 	private static FlightManager flightInstance;

@@ -1,4 +1,4 @@
-package org.depaul.se350.assignment3.Flights;
+package org.depaul.se350.assignment3.flights;
 
 import java.util.Date;
 import java.util.Objects;
@@ -8,23 +8,31 @@ import org.depaul.se350.assignment3.Airline;
 import org.depaul.se350.assignment3.Airport;
 import org.depaul.se350.assignment3.exceptions.IllegalParameterException;
 
-public class CommercialFlight implements Flight {
+public class PassengerFlight implements Flight {
 	
 	private Airline airline;
 	private Airport origin;
 	private Airport destination;
 	private String flightNumber;
+	private int flightCapacity;
 	private Date departureTime;
 	
-	public CommercialFlight(Airline airline, Airport origin, Airport destination, Date departureTime) throws IllegalParameterException {
+	public PassengerFlight(Airline airline, int capacity, Airport origin, Airport destination, Date departureTime) throws IllegalParameterException {
 		setAirline(airline);
 		setOrigin(origin);
 		setDestination(destination);
 		setFlightNumber();
 		setDepartureTime(departureTime);
+		setCapacity(capacity);
 	}
 	
 	
+	private void setCapacity(int capacity) throws IllegalParameterException {
+		if(capacity <= 0 || capacity > 900) {
+			throw new IllegalParameterException("The specified capacity is not possible");
+		}
+		this.flightCapacity = capacity;	
+	}
 	private void setAirline(Airline airline) throws IllegalParameterException {
 		if(airline == null) {
 			throw new IllegalParameterException("Airline cannot be null");
@@ -81,7 +89,7 @@ public class CommercialFlight implements Flight {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CommercialFlight other = (CommercialFlight) obj;
+		PassengerFlight other = (PassengerFlight) obj;
 		return Objects.equals(getAirline(), other.getAirline()) && Objects.equals( getDepartureTime(), other. getDepartureTime())
 				&& Objects.equals(getDestination(), other.getDestination()) && Objects.equals(getFlightNumber(), other.getFlightNumber())
 				&& Objects.equals(getOrigin(), other.getOrigin());

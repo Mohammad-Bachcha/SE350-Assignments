@@ -4,10 +4,10 @@ import java.util.Date;
 
 import org.depaul.se350.assignment3.Airline;
 import org.depaul.se350.assignment3.Airport;
-import org.depaul.se350.assignment3.Flights.CommercialFlight;
-import org.depaul.se350.assignment3.Flights.Flight;
-import org.depaul.se350.assignment3.Flights.PassengerFlight;
 import org.depaul.se350.assignment3.exceptions.IllegalParameterException;
+import org.depaul.se350.assignment3.flights.CommercialFlight;
+import org.depaul.se350.assignment3.flights.Flight;
+import org.depaul.se350.assignment3.flights.PassengerFlight;
 
 public class FlightFactory {
     private FlightFactory() {
