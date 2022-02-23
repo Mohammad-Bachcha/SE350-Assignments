@@ -44,11 +44,11 @@ public class Airport {
 		return Objects.equals(getName(), other.getName());
 	}
 	
-	/*
+	
 	@Override
 	public String toString() {
 		return "Airport Name: " + getName();
 	}
-	*/
+	
 }
 

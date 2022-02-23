@@ -18,8 +18,9 @@ public class TravelManager {
 		try {
 			FlightManager manager = FlightManager.getInstance();
 			airline = AirlineFactory.getAirline("Spirit");	
-			origin = AirportFactory.getAirline("ORD");
-			destination = AirportFactory.getAirline("LAX");
+			origin = AirportFactory.getAirport("ORD");
+			destination = AirportFactory.getAirport("LAX");
+			
 			String createdCommericalFlight = manager.createFlight("Commercial", airline, origin, destination, date);
 			String createdPassengerFlight = manager.createFlight("Passenger", airline, 535, origin, destination, date);
 			

@@ -9,7 +9,7 @@ import org.depaul.se350.assignment3.exceptions.IllegalParameterException;
 public class AirportFactory {
 	private static Map<String, Airport> airportCache = new HashMap<>();
 	
-	 public static Airport getAirline(String name) {
+	 public static Airport getAirport(String name) {
 	        return airportCache.computeIfAbsent(name, newName -> {
 	            try {
 					return new Airport(name);

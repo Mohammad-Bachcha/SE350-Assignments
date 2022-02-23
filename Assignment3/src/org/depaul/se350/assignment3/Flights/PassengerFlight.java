@@ -1,9 +1,11 @@
-package org.depaul.se350.assignment3;
+package org.depaul.se350.assignment3.Flights;
 
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
+import org.depaul.se350.assignment3.Airline;
+import org.depaul.se350.assignment3.Airport;
 import org.depaul.se350.assignment3.exceptions.IllegalParameterException;
 
 public class PassengerFlight implements Flight {
